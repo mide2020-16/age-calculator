@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Age Calculator App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<main>
+    <div class="container">
+        <div class="sub_container">
+            <form id="ageForm">
+                <div class="form_input">
+
+                    <div class="age_input">
+                        <label for="day">DAY</label>
+                        <input type="number" name="day" id="day" placeholder="DD" aria-label="Day input">
+                        <small class="error-message" id="dayError" aria-live="polite"></small>
+                    </div>
+
+                    <div class="age_input">
+                        <label for="month">MONTH</label>
+                        <input type="number" name="month" id="month" placeholder="MM" aria-label="Month input">
+                        <small class="error-message" id="monthError" aria-live="polite"></small>
+                    </div>
+
+                    <div class="age_input">
+                        <label for="year">YEAR</label>
+                        <input type="number" name="year" id="year" placeholder="YYYY" aria-label="Year input">
+                        <small class="error-message" id="yearError" aria-live="polite"></small>
+                    </div>
+
+                </div>
+                <div class="form_submit">
+                    <hr>
+                    <button type="submit" aria-label="Submit">
+                        <img src="./icon-arrow.svg" alt="Submit arrow">
+                    </button>
+                </div>
+            </form>
+
+            <div class="age_output">
+                <h1><span id="years">--</span> years</h1>
+                <h1><span id="months">--</span> months</h1>
+                <h1><span id="days">--</span> days</h1>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://x.com/westfiree">Efuwape Ayomide</a>.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
